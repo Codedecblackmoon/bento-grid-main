@@ -1,8 +1,18 @@
+@font-face {
+    font-family: 'DMSansItalic';
+    src: url('../fonts/DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900; /* If it's a variable font */
+    font-style: italic;
+}
+
+
 html, body {
     margin: 0;
     padding: 0;
     background-color:rgb(229, 229, 229);
-   
+    flex: 1;
+    height: 100vh;
+    font-family: 'DMSansItalic', sans-serif;
 }
 
 .container {
@@ -11,6 +21,8 @@ html, body {
     justify-self: center;
     height: 100vh;
     margin: 50px;
+    max-width: 800px;
+    min-height: 500px;
 }
 .parent {
     display: grid;
@@ -36,7 +48,6 @@ html, body {
 }
 
 .div1 h1 {
-    font-family: 'DM Sans', sans-serif ;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
@@ -44,7 +55,6 @@ html, body {
 }
 
 .div1 p {
-    font-family: 'DM Sans', sans-serif ;
     font-size: 9px;
     font-weight: 0.15em;
 }
@@ -73,6 +83,18 @@ html, body {
     padding: 10px;
     border-radius: 10px;
 }
+
+.div4 h1{
+    font-size: 20px;
+    font-weight: 520;
+    margin-bottom: 15px;
+    font-style: bold;
+}
+
+.div4 img {
+    width: 100%;
+}
+
 .div5 { 
     grid-area: 5 / 1 / 8 / 3;
     background-color: hsla(48, 100%, 41%, 0.707);
@@ -80,6 +102,19 @@ html, body {
     padding: 10px;
     border-radius: 10px;
 }
+
+.div5 img {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.div5 h1 {
+    font-size: 18px;
+    font-weight: 520;
+    margin-bottom: 15px;
+    font-style: bold;
+}
+
 .div6 {
     grid-area: 4 / 6 / 6 / 9;
     background-color: hsla(48, 100%, 41%, 0.707);
@@ -100,4 +135,8 @@ html, body {
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
+}
+.div8 img {
+    width: 100%;
+    size: 100px;
 }
